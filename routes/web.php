@@ -13,7 +13,7 @@ use App\Http\Controllers\Frontend\CartController;
 //Route::get('/', function () {
 //return view('home');
 
-Route::get('/', [FrontendController::class , 'index']);
+Route::get('/', 'FrontendController@index');
 Route::get('category', [FrontendController::class , 'category']);
 Route::get('view-category/{slug}', [FrontendController::class , 'viewcategory']);
 Route::get('category/{slug}/{prod_slug}', [FrontendController::class , 'productview']);
